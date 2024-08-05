@@ -9,7 +9,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Slider {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		
 		WebDriverManager.chromedriver().setup();
@@ -31,6 +31,7 @@ public class Slider {
 		
 		act.dragAndDropBy(minimum, 480, 250).perform();
 		
+		Thread.sleep(10000);
 		
 		WebElement enterMinimum= driver.findElement(By.xpath("//input[@id='min_price']"));
 		
