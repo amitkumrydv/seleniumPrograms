@@ -55,7 +55,7 @@ public class TicketBooking {
 		
 		user.clear();
 		user.click();
-		user.sendKeys("amityadv1");
+		user.sendKeys("Enter Your UserName");
 		
 		
 WebElement pwd =driver.findElement(By.xpath("//input[@placeholder='Password']"));
@@ -63,7 +63,7 @@ WebElement pwd =driver.findElement(By.xpath("//input[@placeholder='Password']"))
 wait.until(ExpectedConditions.elementToBeClickable(pwd));
 		pwd.clear();
 		pwd.click();
-		pwd.sendKeys("agb107");
+		pwd.sendKeys("Enter your password");
 		
 		
 		WebElement capture =driver.findElement(By.xpath("//img[@class='captcha-img']"));
